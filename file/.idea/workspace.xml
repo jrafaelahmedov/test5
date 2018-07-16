@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReadFileIO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ReadFileIO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ReadFileIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+            <state relative-caret-position="266">
+              <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
               <folding>
                 <element signature="method#readUsingBufferedReader#0;class#ReadFileIO#0" expanded="false" />
                 <element signature="method#readUsingFileReader#0;class#ReadFileIO#0" expanded="false" />
@@ -28,43 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/beans/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-              <folding>
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#346#347#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#640#641#0" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#736#737#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#873#874#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="135">
               <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1531074926325" expanded="true" signature="344:355" ph="..." />
               </folding>
             </state>
           </provider>
@@ -73,13 +43,13 @@
       <file leaf-file-name="UserWrapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beans/UserWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding>
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#206#207#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,10 +58,14 @@
       <file leaf-file-name="WriteToFileExampleIO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WriteToFileExampleIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
               <folding>
                 <element signature="method#writeUsingBufferedWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+                <element signature="method#writeUsingBufferedWriterAutoCloseable#0;class#WriteToFileExampleIO#0" expanded="false" />
+                <element signature="method#writeUsingFileWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+                <element signature="method#writeUsingOutputStream#0;class#WriteToFileExampleIO#0" expanded="false" />
+                <element signature="method#writeObjectToFile#0;class#WriteToFileExampleIO#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,11 +100,11 @@
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/src/WriteToFileExampleNIO.java" />
         <option value="$PROJECT_DIR$/src/User.java" />
-        <option value="$PROJECT_DIR$/src/WriteToFileExampleIO.java" />
         <option value="$PROJECT_DIR$/src/ReadFileIO.java" />
-        <option value="$PROJECT_DIR$/src/beans/UserWrapper.java" />
         <option value="$PROJECT_DIR$/src/beans/User.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/WriteToFileExampleIO.java" />
+        <option value="$PROJECT_DIR$/src/beans/UserWrapper.java" />
       </list>
     </option>
   </component>
@@ -160,10 +134,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,6 +159,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,6 +168,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -313,19 +288,19 @@
       <workItem from="1530725463072" duration="6691000" />
       <workItem from="1530795679414" duration="570000" />
       <workItem from="1531069973436" duration="5220000" />
+      <workItem from="1531230020721" duration="332000" />
+      <workItem from="1531760593389" duration="159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15894000" />
+    <option name="totallyTimeSpent" value="16385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="776" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -333,10 +308,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3100304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26037195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26752505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -348,6 +323,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -370,32 +346,107 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#readUsingBufferedReader#0;class#ReadFileIO#0" expanded="false" />
             <element signature="method#readUsingFileReader#0;class#ReadFileIO#0" expanded="false" />
             <element signature="method#readUsingScanner#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingBufferedReaderAutoCloseable#0;class#ReadFileIO#0" expanded="false" />
             <element signature="method#readFileUsingInputStream#0;class#ReadFileIO#0" expanded="false" />
-            <element signature="method#readFileUsingByte#0;class#ReadFileIO#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9345">
-          <caret line="623" column="12" lean-forward="false" selection-start-line="623" selection-start-column="12" selection-end-line="623" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="e#24298#24299#0" expanded="false" />
-            <element signature="e#24363#24364#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
+    <entry file="file://$PROJECT_DIR$/src/beans/UserWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="168" column="29" lean-forward="false" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WriteToFileExampleIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="method#writeUsingBufferedWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingBufferedWriterAutoCloseable#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingFileWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingOutputStream#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeObjectToFile#0;class#WriteToFileExampleIO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReadFileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+          <folding>
+            <element signature="method#readUsingBufferedReader#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingFileReader#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingScanner#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingBufferedReaderAutoCloseable#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readFileUsingInputStream#0;class#ReadFileIO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/UserWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WriteToFileExampleIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding>
+            <element signature="method#writeUsingBufferedWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingBufferedWriterAutoCloseable#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingFileWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingOutputStream#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeObjectToFile#0;class#WriteToFileExampleIO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -404,12 +455,39 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="method#readUsingBufferedReader#0;class#ReadFileIO#0" expanded="false" />
             <element signature="method#readUsingFileReader#0;class#ReadFileIO#0" expanded="false" />
             <element signature="method#readUsingScanner#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingBufferedReaderAutoCloseable#0;class#ReadFileIO#0" expanded="false" />
             <element signature="method#readFileUsingInputStream#0;class#ReadFileIO#0" expanded="false" />
-            <element signature="method#readFileUsingByte#0;class#ReadFileIO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9345">
+          <caret line="623" column="12" lean-forward="false" selection-start-line="623" selection-start-column="12" selection-end-line="623" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="168" column="29" lean-forward="false" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReadFileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#readUsingBufferedReader#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingFileReader#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingScanner#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingBufferedReaderAutoCloseable#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readFileUsingInputStream#0;class#ReadFileIO#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -428,10 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9345">
           <caret line="623" column="12" lean-forward="false" selection-start-line="623" selection-start-column="12" selection-end-line="623" selection-end-column="12" />
-          <folding>
-            <element signature="e#24298#24299#0" expanded="false" />
-            <element signature="e#24363#24364#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -439,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
           <caret line="168" column="29" lean-forward="false" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -497,10 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="148" column="23" lean-forward="false" selection-start-line="148" selection-start-column="21" selection-end-line="148" selection-end-column="23" />
-          <folding>
-            <element signature="e#5748#5749#0" expanded="false" />
-            <element signature="e#5784#5785#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/io/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="49" column="54" lean-forward="false" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/io/Closeable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -564,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2175">
           <caret line="168" column="29" lean-forward="false" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,10 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8670">
           <caret line="623" column="12" lean-forward="false" selection-start-line="623" selection-start-column="12" selection-end-line="623" selection-end-column="12" />
-          <folding>
-            <element signature="e#24298#24299#0" expanded="false" />
-            <element signature="e#24363#24364#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1920">
           <caret line="161" column="12" lean-forward="false" selection-start-line="161" selection-start-column="12" selection-end-line="161" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="2894" column="33" lean-forward="false" selection-start-line="2894" selection-start-column="33" selection-end-line="2894" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="50" column="52" lean-forward="true" selection-start-line="50" selection-start-column="52" selection-end-line="50" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -615,10 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="69" column="39" lean-forward="false" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
-          <folding>
-            <element signature="e#3011#3012#0" expanded="false" />
-            <element signature="e#3058#3059#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,20 +676,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sarkhan Rasullu.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sarkhan Rasullu2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Sarkhan Rasullu.jpg" />
+    <entry file="file://$PROJECT_DIR$/Sarkhan Rasullu2.jpg" />
     <entry file="file://$PROJECT_DIR$/src/WriteToFileExampleNIO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-163">
@@ -655,7 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="111" column="28" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -663,30 +703,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="89" lean-forward="true" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="96" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReadFileIO.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="87" column="18" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
           <folding>
-            <element signature="method#readUsingBufferedReader#0;class#ReadFileIO#0" expanded="false" />
-            <element signature="method#readUsingFileReader#0;class#ReadFileIO#0" expanded="false" />
-            <element signature="method#readUsingScanner#0;class#ReadFileIO#0" expanded="false" />
-            <element signature="method#readUsingBufferedReaderAutoCloseable#0;class#ReadFileIO#0" expanded="false" />
-            <element signature="method#readFileUsingInputStream#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="49" column="74" lean-forward="true" selection-start-line="49" selection-start-column="74" selection-end-line="49" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WriteToFileExampleIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="47" column="14" lean-forward="false" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+        <state relative-caret-position="30">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
           <folding>
             <element signature="method#writeUsingBufferedWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingBufferedWriterAutoCloseable#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingFileWriter#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeUsingOutputStream#0;class#WriteToFileExampleIO#0" expanded="false" />
+            <element signature="method#writeObjectToFile#0;class#WriteToFileExampleIO#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/UserWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -695,49 +754,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#736#737#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/UserWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/ReadFileIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="266">
+          <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
           <folding>
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1531074926325" expanded="true" signature="344:355" ph="..." />
+            <element signature="method#readUsingBufferedReader#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingFileReader#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingScanner#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readUsingBufferedReaderAutoCloseable#0;class#ReadFileIO#0" expanded="false" />
+            <element signature="method#readFileUsingInputStream#0;class#ReadFileIO#0" expanded="false" />
           </folding>
         </state>
       </provider>

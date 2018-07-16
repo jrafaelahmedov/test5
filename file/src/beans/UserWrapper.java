@@ -2,7 +2,7 @@ package beans;
 
 import java.io.Serializable;
 
-public class UserWrapper implements Serializable{
+public class UserWrapper implements Serializable {
 
     private User[] competitors = null;
 
