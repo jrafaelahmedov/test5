@@ -26,7 +26,6 @@ public class UserUtil {
         String password = sc.nextLine();
 
         User user =  UserUtil.login(username,password);
-        Config.setUser(user);
 
         return user;
     }

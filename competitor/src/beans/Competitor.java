@@ -1,6 +1,8 @@
 package beans;
 
-public class Competitor {
+import java.io.Serializable;
+
+public class Competitor implements Serializable{
     private String name;
     private String surname;
     private int age;

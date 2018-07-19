@@ -2,25 +2,40 @@ package config;
 
 import beans.Competitor;
 import beans.User;
+import java.io.Serializable;
 
-public class Config {
+public class Config implements Serializable{
 
-    private static User user =null;
-    private static Competitor[] competitors =null;
+    private User user;
+    private Competitor[] competitors;
 
-    public static void setUser(User user){
-        Config.user = user;
+    public Config(){
+
     }
 
-    public static User getUser(){
+    public Config(User user){
+        this.user = user;
+    }
+
+    public  void setUser(User user){
+        System.out.println("set user called");
+        this.user = user;
+        Intitialization.refreshConfig();//user Config
+    }
+
+    public  User getUser(){
         return user;
     }
 
-    public static Competitor[] getCompetitors() {
+    public  Competitor[] getCompetitors() {
         return competitors;
     }
 
-    public static void setCompetitors(Competitor[] competitors) {
-        Config.competitors = competitors;
+    public  void setCompetitors(Competitor[] competitors) {
+        System.out.println("set competitor called");
+        this.competitors = competitors;
+        Intitialization.refreshConfig();
     }
+
+
 }

@@ -1,5 +1,5 @@
 import beans.User;
-import config.Config;
+import config.Intitialization;
 import util.MenuUtil;
 import util.UserUtil;
 
@@ -14,12 +14,14 @@ public class Main {
     * 3. yarishmaya bashla sechirem bu zaman sistem ozu arxa planda hazir bir index goturur ve menden hansi yarishmacinin qalib oldugunu
     * sorushur eger duz tapsam menim xalimi artirir +
     * 4. logout sechsem bu zaman yeniden login sehifesine qaytarir,.
-    *
     * */
     public static void main(String[] args) {
-        User user = UserUtil.requireInputsAndLogin(1,true);
+        User user = UserUtil.requireInputsAndLogin(1,true);//Sarkhan 12345
+
+        Intitialization.initializeConfig(user);//
 
         System.out.println("Hello, "+user.getUsername());
         MenuUtil.showMenuInfinite();
+
     }
 }

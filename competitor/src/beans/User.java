@@ -1,6 +1,11 @@
 package beans;
 
-public class User {
+import config.Config;
+import config.Intitialization;
+
+import java.io.Serializable;
+
+public class User implements Serializable{
     private String username;
     private String password;
     private int point;
@@ -35,6 +40,7 @@ public class User {
 
     public void setPoint(int point) {
         this.point = point;
+        Intitialization.refreshConfig();
     }
 
 }

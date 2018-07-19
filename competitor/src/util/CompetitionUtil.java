@@ -2,8 +2,9 @@ package util;
 
 import beans.Competitor;
 import beans.User;
-import config.Config;
+import config.Intitialization;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class CompetitionUtil {
@@ -17,7 +18,7 @@ public class CompetitionUtil {
               Competitor competitor=  registerCompetitor();
               competitors[i] = competitor;
         }
-        Config.setCompetitors(competitors);
+        Intitialization.config.setCompetitors(competitors);
         System.out.println("All competitors successfully registered!");
         return competitors;
     }
@@ -55,20 +56,20 @@ public class CompetitionUtil {
     }
 
     public static void printCompetitors(){
-        printCompetitors(Config.getCompetitors());
+        printCompetitors(Intitialization.config.getCompetitors());
     }
 
 
     public static boolean startCompetition(){
-        int winner = 2;
-
+        int winner = chooseWinner(Intitialization.config.getCompetitors().length);
+        System.out.println("winner="+winner);
         System.out.println("Guess winner?");
         Scanner sc = new Scanner(System.in);
         int guessedWinner = sc.nextInt();
 
         if(guessedWinner==winner){
             increasePoint();
-            System.out.println("You won!Your point increase to "+Config.getUser().getPoint());
+            System.out.println("You won!Your point increase to "+Intitialization.config.getUser().getPoint());
 
             return true;
         }else{
@@ -78,17 +79,17 @@ public class CompetitionUtil {
     }
 
     public static void increasePoint(){
-        User user = Config.getUser();
+        User user = Intitialization.config.getUser();
         user.setPoint(user.getPoint()+10);
     }
 
     public static void showPoint(){
-        System.out.println("Your Point:"+Config.getUser().getPoint());
+        System.out.println("Your Point:"+Intitialization.config.getUser().getPoint());
     }
 
     public static void increaseCompetitors(){
 
-      Competitor[] competitorsOld = Config.getCompetitors();
+      Competitor[] competitorsOld = Intitialization.config.getCompetitors();
       Scanner sc = new Scanner(System.in);
       System.out.println("How many competitors you want to append?");
       int increaseCount = sc.nextInt();//3
@@ -101,7 +102,14 @@ public class CompetitionUtil {
             competitorsNew[i] = registerCompetitor();
         }
 
-        Config.setCompetitors(competitorsNew);
+        Intitialization.config.setCompetitors(competitorsNew);
+    }
+
+    public static int chooseWinner(int number) {
+        Random random = new Random();
+        int selectedMember = random.nextInt(number);
+        int res = ((selectedMember - 1) + 1) + 1;
+        return res;
     }
 
 }
