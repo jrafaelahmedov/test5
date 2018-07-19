@@ -61,13 +61,17 @@ public class WriteToFileExampleIO {
         }
     }
 
-    private static void writeUsingFileWriter(String data) {
+    public static void writeUsingFileWriter(String data, boolean append) {
         File file = new File("test ");
-        try(FileWriter fr = new FileWriter(file)) {
+        try(FileWriter fr = new FileWriter(file, append)) {
             fr.write(data);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void writeUsingFileWriter(String data) {
+        writeUsingFileWriter(data,false);
     }
 
     private static void writeUsingOutputStream(String data) {

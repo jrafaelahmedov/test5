@@ -5,6 +5,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 public class WriteToFileExampleNIO {
 
@@ -12,9 +13,12 @@ public class WriteToFileExampleNIO {
         copyFileUsingPath();
     }
 
-    public static void writeUsingPath() throws IOException {
+    public static void writeUsingPath(String data,boolean append) throws IOException {
         Path path = Paths.get("question.txt");
-        Files.write(path, "To be or not to be?".getBytes());
+        if(append)
+            Files.write(path,data.getBytes(), StandardOpenOption.APPEND);
+        else
+            Files.write(path, data.getBytes());
     }
 
     public static void writeUsingBufferedWriter() throws IOException {
