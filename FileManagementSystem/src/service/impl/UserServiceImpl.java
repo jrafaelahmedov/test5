@@ -3,7 +3,6 @@ package service.impl;
 import config.Initializer;
 import bean.User;
 import dao.inter.UserDaoInter;
-
 import java.util.List;
 
 public final class UserServiceImpl extends AbstractUserService {

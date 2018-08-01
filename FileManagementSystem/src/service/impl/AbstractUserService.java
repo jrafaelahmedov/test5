@@ -36,9 +36,11 @@ abstract class AbstractUserService implements UserServiceInter {
         for(User user:allActiveUsers){
             if(user.getUsername().equals(enteredUser.getUsername()) &&
                     user.getPassword().equals(enteredUser.getPassword())){
+                Initializer.config.setLoggedInUser(user);
                 return user;
             }
         }
+
         throw new IllegalArgumentException("Invalid username or password");
     }
 
