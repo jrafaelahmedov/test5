@@ -1,11 +1,13 @@
 package bean;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Config extends AbstractConfig{
+public class Config implements Serializable{
 
     private User loggedInUser;
     private List<User> allUsers;
+    public static final String fileName = "fmsconfig.ser";
 
     public List<User> getAllUsers() {
         return allUsers;

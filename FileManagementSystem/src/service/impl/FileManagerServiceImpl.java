@@ -2,7 +2,11 @@ package service.impl;
 
 import bean.Config;
 import bean.User;
+import config.Initializer;
 import service.inter.UserServiceInter;
+import util.ReadFileIO;
+import util.WriteToFileIO;
+
 import java.util.List;
 
 public final class FileManagerServiceImpl extends AbstractFileManager {
@@ -41,13 +45,12 @@ public final class FileManagerServiceImpl extends AbstractFileManager {
 
     @Override
     public Config readConfig() {
-        return null;//Config obyektini filedan oxumaq lazimdir.
+        return (Config) ReadFileIO.readFileDeserialize(Config.fileName);//Config obyektini filedan oxumaq lazimdir.
     }
 
     @Override
     public boolean refreshConfig() {
-        //Initializer.config bu deyisheni fayla yazmaq lazimdir.
-        return false;
+        return WriteToFileIO.writeObjectToFile(Initializer.config, Config.fileName);
     }
 
 }

@@ -10,7 +10,7 @@ public class Main {
     private static UserServiceInter userService = DI.userService();
     private static FileManagerServiceInter fileManagerService = DI.fileManagerService();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
        Initializer.initialize();
        int selectedMenu = menuService.showMenu();
        if(selectedMenu==1){

@@ -10,13 +10,13 @@ import java.util.Scanner;
 
 abstract class AbstractUserService implements UserServiceInter {
 
-    public String askForUserId(){
+    public String askForUserId() {
         System.out.println(MessageConstant.whichUserToApprove);
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
     }
 
-    public User getUserById(String id){
+    public User getUserById(String id) {
         List<User> allUsers = getAllUsers();
         if(allUsers==null || allUsers.size()==0){
             return null;
@@ -29,6 +29,7 @@ abstract class AbstractUserService implements UserServiceInter {
         return null;
     }
 
+    @Override
     public User login() {
         User enteredUser = askUsernameAndPassword();
         List<User> allActiveUsers = getAllActiveUsers();

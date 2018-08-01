@@ -1,9 +1,10 @@
 package bean;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
 
-public class User {
+public class User implements Serializable{
 
     private String id;
     private String name;
@@ -13,6 +14,14 @@ public class User {
     private int status;//1- active, 0-non active
     private int position;//1-admin, 0- normal user
     private List<String> nonAccessableFilesOrFolders;
+
+    public User() {
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
     public User(String name, String surname, String username, String password) {
         this.id = UUID.randomUUID().toString();
