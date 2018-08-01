@@ -21,14 +21,26 @@ public class Main {
     * 4. logout sechsem bu zaman yeniden login sehifesine qaytarir,.
     * */
     public static void main(String[] args) throws Exception {
-        User user = UserUtil.requireInputsAndLogin(1,true);//Sarkhan 12345
+//        User user = UserUtil.requireInputsAndLogin(1,true);//Sarkhan 12345
+//
+//        Intitialization.initializeConfig(user);//
+//
+//        System.out.println("Hello, "+user.getUsername());
+//        MenuUtil.showMenuInfinite();
 
-        Intitialization.initializeConfig(user);//
+        User[] users = new User[2];
 
-        System.out.println("Hello, "+user.getUsername());
-        MenuUtil.showMenuInfinite();
-
-
-
+        System.out.println( users.getClass().getSuperclass().getName());
+//        System.out.println( objects.getClass().getSimpleName());;
+//        Class[] classes = competitors.getClass().getInterfaces()Classes();
+//        Class[] classes = competitors.getClass().getEnclosingClass()DeclaredClasses();
+//        Class[] classes = competitors.getClass().getInterfaces();
+//        for(Class c: classes){
+//            System.out.println(c.getName());
+//            System.out.println(c.getSimpleName());
+////            System.out.println(c.getSuperclass().getName());
+////            System.out.println(c.getSuperclass().getSimpleName());
+//        }
+//        System.out.println(competitors.getClass().getDeclaringClass().getName());
     }
 }
