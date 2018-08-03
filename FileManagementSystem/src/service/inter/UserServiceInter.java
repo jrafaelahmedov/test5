@@ -36,5 +36,9 @@ public interface UserServiceInter {
 
         public void setNonAccessibleFileOrFoldersForUser();
 
+        public List<String> getAllNonAccessibeFileOrFolders();
 
+        public void printAllSubFilesAndFolders();
+
+        public String askForPath();
 }

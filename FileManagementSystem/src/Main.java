@@ -34,7 +34,7 @@ public class Main {
            } else if (selectedMenu == 8) {
                userService.login();
            } else if (selectedMenu == 9) {
-               userService.
+               userService.setNonAccessibleFileOrFoldersForUser();
            }
        }
 

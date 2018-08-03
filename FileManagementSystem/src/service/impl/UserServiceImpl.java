@@ -3,6 +3,8 @@ package service.impl;
 import config.Initializer;
 import bean.User;
 import dao.inter.UserDaoInter;
+import service.inter.FileManagerServiceInter;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,8 +27,37 @@ public final class UserServiceImpl extends AbstractUserService {
 
     @Override
     public void setNonAccessibleFileOrFoldersForUser() {
-        //sechilen userin idsine gore useri tapib hemin userin daxil ola bilmeyeceyi file ve ya folderleri admin daxil ede bilmesi lazimdir
+            String userId = askForUserId();
+            User user = getUserById(userId);
+            List<String> naf = getAllNonAccessibeFileOrFolders();
+            user.setNonAccessableFilesOrFolders(naf);
+            userDaoInter.save(user);
+    }
 
+
+    @Override
+    public List<String> getAllNonAccessibeFileOrFolders(){
+        //burada adminden accessi olmayan file ve folderlerin listini return edirsiniz scanner ile alib return edirsiniz.
+        return null;
+    }
+
+    FileManagerServiceInter fms = DI.fileManagerService();
+
+
+    @Override//mushteriden daxil olmasini istediyi file ve ya folderin adini isteyeceksiniz
+    public String askForPath(){
+        return null;
+    }
+
+    @Override
+    public void printAllSubFilesAndFolders() {
+        String path = askForPath();
+        boolean hasAccess= checkUserAccessToFile(path);
+        if(hasAccess){
+            fms.printAllSubFilesAndFolders(path);
+        }else{
+            System.out.println("You don't have an access");
+        }
     }
 
     //mushteriden user haqqinda her sheyi sorushub user obyekti qaytarirsiniz
