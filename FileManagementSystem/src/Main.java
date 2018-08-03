@@ -11,6 +11,7 @@ public class Main {
     private static FileManagerServiceInter fileManagerService = DI.fileManagerService();
 
     public static void main(String[] args) throws Exception{
+//        System.out.println("main method started");
        Initializer.initialize();
        int selectedMenu = menuService.showMenu();
        if(selectedMenu==1){

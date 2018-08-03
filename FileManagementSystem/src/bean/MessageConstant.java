@@ -6,7 +6,8 @@ public class MessageConstant {
                     "1.Show users\n" +
                     "2.Show active users\n" +
                     "3.Show inactive users\n" +
-                    "4.Approve user";
+                    "4.Approve user\n"+
+                    "5.Set non accessible files or folders for user";//buna heleki baxmayin
 
     public static final String menuDescriptionAfterLoginUser =
             "Please choose menu:\n" +

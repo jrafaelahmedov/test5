@@ -13,12 +13,14 @@ public class Initializer {
     private static FileManagerServiceInter fms = DI.fileManagerService();
 
     public static void initialize() throws Exception{
-        config = fms.readConfig();
+        config = fms.readConfig();//null
         if(config==null){
             User user = new User("admin","admin");
+            user.setPosition(1);//admin
+            user.setStatus(1);//active
             config = new Config();
             config.setAllUsers(Arrays.asList(user));
-            fms.refreshConfig();
+            fms.refreshConfig();//
             initialize();
         }
     }

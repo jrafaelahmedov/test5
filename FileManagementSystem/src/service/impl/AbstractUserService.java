@@ -52,14 +52,14 @@ abstract class AbstractUserService implements UserServiceInter {
 
     @Override
     public void printAllActiveUsers() {
-        List<User> users = getAllUsers();
+        List<User> users = getAllActiveUsers();
         System.out.println(users);
     }
 
     @Override
     public void printAllInActiveUsers() {
         System.out.println(MessageConstant.allInActiveUsers);
-        List<User> users = getAllUsers();
+        List<User> users = getAllInActiveUsers();
         System.out.println(users);
     }
 

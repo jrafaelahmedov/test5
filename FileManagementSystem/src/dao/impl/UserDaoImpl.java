@@ -11,7 +11,14 @@ import java.util.List;
 
 public class UserDaoImpl implements UserDaoInter {
 
-    FileManagerServiceInter fms = DI.fileManagerService();
+    FileManagerServiceInter fms;
+
+    public UserDaoImpl(){
+        fms = DI.fileManagerService();
+//        System.out.println("UserDaoImpl constr");
+
+    }
+
 
     @Override
     public boolean add(User user) {

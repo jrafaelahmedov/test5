@@ -1,30 +1,15 @@
 package service.impl;
 
 import bean.Config;
-import bean.User;
 import config.Initializer;
-import service.inter.UserServiceInter;
 import util.ReadFileIO;
 import util.WriteToFileIO;
-
-import java.util.List;
 
 public final class FileManagerServiceImpl extends AbstractFileManager {
 
     protected FileManagerServiceImpl(){
-
+//        System.out.println("FileManagerServiceImpl construcor");
     }
-
-    private UserServiceInter userServiceInter = DI.userService();
-
-    @Override
-    public boolean checkUserAccessToFile(String fileOrFolderPath) {
-        User user =  userServiceInter.getLoggedInUser();
-        List<String> nonAccessibleFileOrFolders = user.getNonAccessableFilesOrFolders();
-        boolean hasAccess = !nonAccessibleFileOrFolders.contains(fileOrFolderPath);
-        return hasAccess;
-    }
-
 
     @Override
     public String getSelectedFileOrFolderPath() {

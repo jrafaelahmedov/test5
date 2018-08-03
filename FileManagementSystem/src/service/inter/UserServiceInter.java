@@ -32,5 +32,7 @@ public interface UserServiceInter {
 
         public User login();
 
+        public boolean checkUserAccessToFile(String fileOrFolderPath);
+
 
 }

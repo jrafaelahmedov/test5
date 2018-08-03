@@ -9,15 +9,18 @@ import java.util.Scanner;
 //Burada hech neye toxunmayin her shey hazirdir.
 public final class MenuServiceImpl implements MenuServiceInter {
 
-    protected MenuServiceImpl(){
+    private UserServiceInter userService = DI.userService();
+
+    protected MenuServiceImpl( ){
+//        System.out.println("menu service constructor");
 
     }
 
-    private UserServiceInter userService = DI.userService();
 
     @Override
     public int showMenu() {
         Scanner sc = new Scanner(System.in);
+//        System.out.println("show menu userservice="+userService);
         User loggedInUser = userService.getLoggedInUser();
         if(loggedInUser!=null) {
             if (loggedInUser.isAdmin()) {

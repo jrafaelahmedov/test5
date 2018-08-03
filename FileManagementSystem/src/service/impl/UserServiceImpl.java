@@ -4,14 +4,25 @@ import config.Initializer;
 import bean.User;
 import dao.inter.UserDaoInter;
 import java.util.List;
+import java.util.Scanner;
 
 public final class UserServiceImpl extends AbstractUserService {
 
-    protected UserServiceImpl(){
+    private UserDaoInter userDaoInter;//impl polymorphyzim  loosely coupling
 
+    protected UserServiceImpl(){//
+        userDaoInter = DI.userDao();
+//        System.out.println("user service constructor");
     }
 
-    private UserDaoInter userDaoInter = UserDaoInter.instance();
+
+    @Override
+    public boolean checkUserAccessToFile(String fileOrFolderPath) {
+        User user =  getLoggedInUser();
+        List<String> nonAccessibleFileOrFolders = user.getNonAccessableFilesOrFolders();
+        boolean hasAccess = !nonAccessibleFileOrFolders.contains(fileOrFolderPath);
+        return hasAccess;
+    }
 
     //mushteriden user haqqinda her sheyi sorushub user obyekti qaytarirsiniz
     @Override
@@ -53,7 +64,7 @@ public final class UserServiceImpl extends AbstractUserService {
 
     @Override
     public boolean approveUser() {
-        printAllInActiveUsers();
+        printAllInActiveUsers();//
         String id = askForUserId();
         User user = getUserById(id);
         user.setStatus(1);

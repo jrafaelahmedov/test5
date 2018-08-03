@@ -6,8 +6,6 @@ public interface FileManagerServiceInter {
 
     public String getSelectedFileOrFolderPath();
 
-    public boolean checkUserAccessToFile(String filePath);
-
     public boolean isItFolder(String path);
 
     public void printAllSubFilesAndFolders(String folderPath);

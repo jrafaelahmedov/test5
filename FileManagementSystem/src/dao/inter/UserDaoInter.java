@@ -16,8 +16,4 @@ public interface UserDaoInter {
         public List<User> getAllInActiveUsers();//must print all inactive users
 
         public List<User> getAllActiveUsers();//must print all active users
-
-        public static UserDaoInter instance(){
-                return new UserDaoImpl();
-        }
 }
