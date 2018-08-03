@@ -22,7 +22,7 @@ abstract class AbstractUserService implements UserServiceInter {
             return null;
         }
         for(User user: allUsers){
-            if(user.getId().equals(id)){
+            if(user.getId()!=null && user.getId().equals(id)){
                 return user;
             }
         }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Config implements Serializable{
 
-    private User loggedInUser;
+    private transient User loggedInUser;
     private List<User> allUsers;
     public static final String fileName = "fmsconfig.ser";
 

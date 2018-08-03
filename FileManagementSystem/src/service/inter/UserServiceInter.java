@@ -34,5 +34,7 @@ public interface UserServiceInter {
 
         public boolean checkUserAccessToFile(String fileOrFolderPath);
 
+        public void setNonAccessibleFileOrFoldersForUser();
+
 
 }

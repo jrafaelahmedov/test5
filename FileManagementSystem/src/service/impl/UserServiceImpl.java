@@ -12,7 +12,6 @@ public final class UserServiceImpl extends AbstractUserService {
 
     protected UserServiceImpl(){//
         userDaoInter = DI.userDao();
-//        System.out.println("user service constructor");
     }
 
 
@@ -24,16 +23,42 @@ public final class UserServiceImpl extends AbstractUserService {
         return hasAccess;
     }
 
+    @Override
+    public void setNonAccessibleFileOrFoldersForUser() {
+        //sechilen userin idsine gore useri tapib hemin userin daxil ola bilmeyeceyi file ve ya folderleri admin daxil ede bilmesi lazimdir
+
+    }
+
     //mushteriden user haqqinda her sheyi sorushub user obyekti qaytarirsiniz
     @Override
     public User askAllFieldsToClient() {
-        return null;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("name:");
+        String name = sc.nextLine();
+
+        System.out.println("surname:");
+        String surname = sc.nextLine();
+
+        System.out.println("username:");
+        String username = sc.nextLine();
+
+        System.out.println("password");
+        String password = sc.nextLine();
+        return new User(name,surname, username,password);
     }
 
     //userin username ve parolunu sorushub user obyekti qaytarirsiniz
     @Override
     public User askUsernameAndPassword() {
-        return null;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("username:");
+        String username = sc.nextLine();
+
+        System.out.println("password");
+        String password = sc.nextLine();
+        return new User(username,password);
     }
 
     @Override
@@ -64,6 +89,11 @@ public final class UserServiceImpl extends AbstractUserService {
 
     @Override
     public boolean approveUser() {
+        List<User> users = getAllInActiveUsers();
+        if(users.size()==0){
+            System.out.println("there is not any inactive users");
+            return false;
+        }
         printAllInActiveUsers();//
         String id = askForUserId();
         User user = getUserById(id);
