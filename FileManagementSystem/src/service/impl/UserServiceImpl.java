@@ -5,6 +5,7 @@ import bean.User;
 import dao.inter.UserDaoInter;
 import service.inter.FileManagerServiceInter;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -12,14 +13,14 @@ public final class UserServiceImpl extends AbstractUserService {
 
     private UserDaoInter userDaoInter;//impl polymorphyzim  loosely coupling
 
-    protected UserServiceImpl(){//
+    protected UserServiceImpl() {//
         userDaoInter = DI.userDao();
     }
 
 
     @Override
     public boolean checkUserAccessToFile(String fileOrFolderPath) {
-        User user =  getLoggedInUser();
+        User user = getLoggedInUser();
         List<String> nonAccessibleFileOrFolders = user.getNonAccessableFilesOrFolders();
         boolean hasAccess = !nonAccessibleFileOrFolders.contains(fileOrFolderPath);
         return hasAccess;
@@ -27,35 +28,64 @@ public final class UserServiceImpl extends AbstractUserService {
 
     @Override
     public void setNonAccessibleFileOrFoldersForUser() {
-            String userId = askForUserId();
-            User user = getUserById(userId);
-            List<String> naf = getAllNonAccessibeFileOrFolders();
-            user.setNonAccessableFilesOrFolders(naf);
-            userDaoInter.save(user);
+        String userId = askForUserId();
+        User user = getUserById(userId);
+        List<String> naf = getAllNonAccessibeFileOrFolders();
+        user.setNonAccessableFilesOrFolders(naf);
+        userDaoInter.save(user);
     }
 
 
     @Override
-    public List<String> getAllNonAccessibeFileOrFolders(){
+    public List<String> getAllNonAccessibeFileOrFolders() {
         //burada adminden accessi olmayan file ve folderlerin listini return edirsiniz scanner ile alib return edirsiniz.
-        return null;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many file or folder you want to ignore?");
+        int count=scan.nextInt();
+        System.out.println("Please insert non access files or folders directory: ");
+        scan.nextLine();
+        String nonAccesFileOrFolders = scan.nextLine();
+        List<String> nonAccesFileslist = new ArrayList<>();
+        for(int i =0;i<count;i++){
+            nonAccesFileslist.add(i,nonAccesFileOrFolders);
+        }
+        return nonAccesFileslist;
     }
+
+    @Override
+    public List<String> setAllFileOrFolders() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many file or folder you want to insert?");
+        int count=scan.nextInt();
+        System.out.println("Please insert files or folders directory: ");
+        String fileOrFolders = scan.nextLine();
+        List<String> fileslist = new ArrayList<>();
+        for(int i =0;i<count;i++){
+            fileslist.add(i,fileOrFolders);
+        }
+        return fileslist;
+    }
+
 
     FileManagerServiceInter fms = DI.fileManagerService();
 
 
-    @Override//mushteriden daxil olmasini istediyi file ve ya folderin adini isteyeceksiniz
-    public String askForPath(){
-        return null;
+    @Override
+    public String askForPath() {
+        //mushteriden daxil olmasini istediyi file ve ya folderin adini isteyeceksiniz
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter File or Folder name: ");
+        String path = scan.nextLine();
+        return path;
     }
 
     @Override
     public void printAllSubFilesAndFolders() {
         String path = askForPath();
-        boolean hasAccess= checkUserAccessToFile(path);
-        if(hasAccess){
+        boolean hasAccess = checkUserAccessToFile(path);
+        if (hasAccess) {
             fms.printAllSubFilesAndFolders(path);
-        }else{
+        } else {
             System.out.println("You don't have an access");
         }
     }
@@ -65,18 +95,18 @@ public final class UserServiceImpl extends AbstractUserService {
     public User askAllFieldsToClient() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("name:");
+        System.out.println("Please insert your name:");
         String name = sc.nextLine();
 
-        System.out.println("surname:");
+        System.out.println("Please insert your surname:");
         String surname = sc.nextLine();
 
-        System.out.println("username:");
+        System.out.println("Please insert your username:");
         String username = sc.nextLine();
 
-        System.out.println("password");
+        System.out.println("Please insert your password");
         String password = sc.nextLine();
-        return new User(name,surname, username,password);
+        return new User(name, surname, username, password);
     }
 
     //userin username ve parolunu sorushub user obyekti qaytarirsiniz
@@ -84,16 +114,16 @@ public final class UserServiceImpl extends AbstractUserService {
     public User askUsernameAndPassword() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("username:");
+        System.out.println("Please insert your username:");
         String username = sc.nextLine();
 
-        System.out.println("password");
+        System.out.println("Please insert your password");
         String password = sc.nextLine();
-        return new User(username,password);
+        return new User(username, password);
     }
 
     @Override
-    public User getLoggedInUser(){
+    public User getLoggedInUser() {
         return Initializer.config.getLoggedInUser();
     }
 
@@ -121,7 +151,7 @@ public final class UserServiceImpl extends AbstractUserService {
     @Override
     public boolean approveUser() {
         List<User> users = getAllInActiveUsers();
-        if(users.size()==0){
+        if (users.size() == 0) {
             System.out.println("there is not any inactive users");
             return false;
         }

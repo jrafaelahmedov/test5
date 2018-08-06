@@ -38,6 +38,8 @@ public interface UserServiceInter {
 
         public List<String> getAllNonAccessibeFileOrFolders();
 
+        public List<String> setAllFileOrFolders();
+
         public void printAllSubFilesAndFolders();
 
         public String askForPath();
