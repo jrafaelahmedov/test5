@@ -14,8 +14,17 @@ public class User implements Serializable{
     private int status;//1- active, 0-non active
     private int position;//1-admin, 0- normal user
     private List<String> nonAccessableFilesOrFolders;
+    private List<String> adminFilesOrFolders;
 
     public User() {
+    }
+
+    public List<String> getAdminFilesOrFolders() {
+        return adminFilesOrFolders;
+    }
+
+    public void setAdminFilesOrFolders(List<String> adminFilesOrFolders) {
+        this.adminFilesOrFolders = adminFilesOrFolders;
     }
 
     public User(String username, String password) {
@@ -37,6 +46,11 @@ public class User implements Serializable{
         this.username = username;
         this.password = password;
         this.nonAccessableFilesOrFolders = nonAccessableFilesOrFolders;
+    }
+    public User(String username, String password, List<String> adminFilesOrFolders) {
+        this.username = username;
+        this.password = password;
+        this.adminFilesOrFolders = adminFilesOrFolders;
     }
 
     public String getName() {

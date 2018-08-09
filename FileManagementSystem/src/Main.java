@@ -37,6 +37,8 @@ public class Main {
                 userService.setNonAccessibleFileOrFoldersForUser();
             } else if (selectedMenu == 10) {
                 userService.setAllFileOrFolders();
+            }else if (selectedMenu == 11) {
+                userService.getAllFileOrFolders();
             }
         }
 

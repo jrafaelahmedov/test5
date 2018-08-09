@@ -8,7 +8,8 @@ public class MessageConstant {
                     "3.Show inactive users\n" +
                     "4.Approve user\n"+
                     "9.Set non accessible files or folders for user\n" +
-                    "10.Set files or folders";
+                    "10.Set files or folders directory\n" +
+                    "11.Get files or folders directory";
 
     public static final String menuDescriptionAfterLoginUser =
             "Please choose menu:\n" +

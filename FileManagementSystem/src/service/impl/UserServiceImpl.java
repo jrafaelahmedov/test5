@@ -41,29 +41,46 @@ public final class UserServiceImpl extends AbstractUserService {
         //burada adminden accessi olmayan file ve folderlerin listini return edirsiniz scanner ile alib return edirsiniz.
         Scanner scan = new Scanner(System.in);
         System.out.println("How many file or folder you want to ignore?");
-        int count=scan.nextInt();
+        int count = scan.nextInt();
         System.out.println("Please insert non access files or folders directory: ");
         scan.nextLine();
         String nonAccesFileOrFolders = scan.nextLine();
         List<String> nonAccesFileslist = new ArrayList<>();
-        for(int i =0;i<count;i++){
-            nonAccesFileslist.add(i,nonAccesFileOrFolders);
+        for (int i = 0; i < count; i++) {
+            nonAccesFileslist.add(i, nonAccesFileOrFolders);
         }
         return nonAccesFileslist;
     }
 
     @Override
-    public List<String> setAllFileOrFolders() {
+    public List<String> getAllFileOrFolders() {
+        User user = getUserById("admin");
+        List<String> fileslist = user.getAdminFilesOrFolders();
+        System.out.println(fileslist.toString());
+        return fileslist;
+    }
+
+    @Override
+    public void setAllFileOrFolders() {
+        //Scanner scan = new Scanner(System.in);
+        User user = getUserById("admin");
+        List<String> fileslist = getAdminFileOrFolders();
+        user.setAdminFilesOrFolders(fileslist);
+        userDaoInter.save(user);
+    }
+
+
+    private static List<String> getAdminFileOrFolders() {
         Scanner scan = new Scanner(System.in);
         System.out.println("How many file or folder you want to insert?");
-        int count=scan.nextInt();
+        int count = scan.nextInt();
+        List<String> adminFileslist = new ArrayList<>();
         System.out.println("Please insert files or folders directory: ");
-        String fileOrFolders = scan.nextLine();
-        List<String> fileslist = new ArrayList<>();
-        for(int i =0;i<count;i++){
-            fileslist.add(i,fileOrFolders);
+        for (int i = 0; i < count; i++) {
+            String fileOrFolders = scan.nextLine();
+            adminFileslist.add(i, fileOrFolders);
         }
-        return fileslist;
+        return adminFileslist;
     }
 
 

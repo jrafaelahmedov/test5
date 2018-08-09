@@ -22,6 +22,7 @@ public class Initializer {
             User user = new User("admin","admin");
             user.setPosition(1);//admin
             user.setStatus(1);//active
+            user.setId("admin");
             config = new Config();
             List<User> list = new ArrayList<>();
             list.add(user);

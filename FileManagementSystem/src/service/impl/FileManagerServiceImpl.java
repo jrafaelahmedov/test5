@@ -2,6 +2,7 @@ package service.impl;
 
 import bean.Config;
 import config.Initializer;
+import jdk.nashorn.internal.ir.Terminal;
 import util.ReadFileIO;
 import util.WriteToFileIO;
 
@@ -43,7 +44,8 @@ public final class FileManagerServiceImpl extends AbstractFileManager {
         boolean isDirectory = Files.isDirectory(file);   // Check if it's a directory
         boolean isFile = Files.isRegularFile(file); // Check if it's a regular file
         if (isDirectory) {
-            System.out.println("cd "+file+"%d");
+            System.out.println("cd "+file+" %d");
+            System.out.println( System.getProperty(file.toString()));
         } else if (isFile) {
             System.out.println("dir");
         }
